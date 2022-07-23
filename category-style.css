@@ -1,19 +1,28 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* CATEGORY  */
 
 .categories {
-  padding: 20px;
-  display: flex;
+  padding-top: 20px;
+  background-color: #fafafa;
 }
 
 .category {
-  background-color: #f7f7f7;
+  background-color: #f0f0f0;
   border-radius: 5px;
-  margin-bottom: 15px;
-  width: 50%;
+  margin-bottom: 10px;
+  width: 49%;
+}
+
+.category:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .category-header {
-  border: 3px solid #333;
+  border-top: 4px solid #1098ad;
   padding: 20px;
   border-radius: 5px;
 }
@@ -41,54 +50,51 @@
   margin-bottom: 25px;
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
 }
 
 .more-category:hover,
 .more-category:active {
-  background-color: #eee;
+  background-color: #f7f7f7;
   color: #1098ad;
   font-weight: bold;
   text-decoration: none;
 }
 
+.more-category:hover::before,
+.more-category:active::before {
+  content: "👉";
+  padding: 5px;
+}
+
 /* BOOK */
 
 .books {
-  display: flex;
   padding: 20px;
-  justify-content: space-around;
 }
 
 .book {
   background-color: #fff;
-  padding: 20px;
+  padding: 15px 12px 10px 12px;
   position: relative;
 }
 
+.book:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 .book-img {
-  width: 150px;
+  width: 100px;
+  border-radius: 3px;
 }
 
 .book-info {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .book-title {
   text-align: center;
-}
-
-.book-status {
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  padding: 6px 10px;
-  position: absolute;
-  top: -10px;
-  left: -15px;
 }
 
 .book-title a:link,
@@ -104,11 +110,14 @@
   text-align: center;
 }
 
-.color-bg-red {
-  color: #eee;
-  background-color: #ec2f2f;
-}
-
-.color-bg-green {
-  background-color: #90cc20;
+.book-status {
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 4px 5px;
+  position: absolute;
+  top: -12px;
+  left: -10px;
 }

@@ -35,32 +35,48 @@
 			<ul class="breadcrumb">
 				<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
 				<li class="breadcrumb-item"><a href="./category.html">Category</a></li>
-				<li class="breadcrumb-item">Book name</li>
+				<li class="breadcrumb-item"><span>Book name</span></li>
 			</ul>
 		</aside>
 		<article class="book">
-			<div class="book-body">
-				<figure class="book-imgs">
-					<img class="book-img main-img" src="" alt="book's main image">
-					<img class="book-img" src="" alt="book's small image 1">
-					<img class="book-img" src="" alt="book's small image 2">
-					<img class="book-img" src="" alt="book's small image 3">
+			<div class="book-general-info">
+				<figure class="main-images">
+					<!-- HTML and CSS: Design and Build Websites 1st Edition
+							Amazon
+							https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/ -->
+					<img class="book-img main-img" src="./images/html-css-book.jpg" alt="html-css-book">
 				</figure>
-				<div class="book-general">
+				<figure class="sub-images">
+					<img class="book-img sub-img" src="./images/html-css-book-back.jpg" alt="html-css-book's back">
+					<img class="book-img sub-img" src="./images/html-css-book-papers.jpg" alt="html-css-book thickness">
+					<img class="book-img sub-img" src="./images/html-css-book-back-2.jpg" alt="html-css-book's other back">
+				</figure>
+				<div class="book-controls">
 					<p class="book-price">$100</p>
-					<button class="add-cart">Add to Cart</button>
+					<p class="book-fee">$20 Shipping & Import Fees Deposit to Vietnam</p>
+					<p class="book-shipping">Delivery <strong>Monday, August 2022</strong></p>
+					<button class="add-cart-btn">Add to cart</button>
 				</div>
-				<div class="book-info">
-					<h3 class="book-title">Book name</h3>
-					<p class="book-desc">Book description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, nemo?
-						Hic alias vero voluptatum similique eaque, nihil quaerat neque eius. Maiores optio ducimus expedita culpa
-						ullam dolore molestias atque voluptatum!</p>
-				</div>
+			</div>
+			<div class="book-header clearfix">
+				<h3 class="book-title">Book name</h3>
+				<p class="book-author">by Jon Duckett</p>
+				<p class="book-ranking color-bg-red">#1 Best Seller</p>
+			</div>
+			<div class="book-detail">
+				<p class="book-desc">Book description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, nemo?
+					Hic alias vero voluptatum similique eaque, nihil quaerat neque eius. Maiores optio ducimus expedita culpa
+					ullam dolore molestias atque voluptatum!</p>
+				<p class="book-desc">Book description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, nemo?
+					Hic alias vero voluptatum similique eaque, nihil quaerat neque eius. Maiores optio ducimus expedita culpa
+					ullam dolore molestias atque voluptatum!</p>
 			</div>
 		</article>
 	</main>
 	<footer class="main-footer">
-		<p class="copyright">Copyright &copy; 2022 by The Book Store.</p>
+		<div class="footer-body">
+			<p class="copyright">Copyright &copy; 2022 by The Book Store.</p>
+		</div>
 		<nav class="navbar footer-nav" aria-labelledby="second-navigation">
 			<ul class="nav-items">
 				<li class="nav-item"><a href="#">About Us</a></li>

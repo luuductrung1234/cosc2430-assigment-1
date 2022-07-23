@@ -6,7 +6,13 @@
 
 body {
   font-family: sans-serif;
-  padding: 5px 30px;
+  padding: 5px 20px;
+  position: relative;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 /* HEADER */
@@ -14,7 +20,7 @@ body {
 .main-header {
   background-color: #f7f7f7;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -34,7 +40,6 @@ body {
 
 .main-nav {
   background-color: #1098ad;
-  width: 100vh;
 }
 
 .nav-items {
@@ -50,7 +55,7 @@ body {
   font-family: inherit;
   text-align: center;
   display: inline-block;
-  padding: 10px 35px;
+  padding: 10px 40px;
   text-decoration: none;
 }
 
@@ -64,7 +69,7 @@ body {
   border: none;
   outline: none;
   color: #f7f7f7;
-  padding: 10px 35px;
+  padding: 10px 40px;
   background-color: inherit;
   font-family: inherit;
 }
@@ -148,4 +153,26 @@ body {
 .footer-nav .nav-item a:hover,
 .footer-nav .nav-item a:active {
   background-color: #ddd;
+}
+
+/* SHARED */
+
+.color-bg-red {
+  color: #eee;
+  background-color: #ec2f2f;
+}
+
+.color-bg-blue {
+  color: #eee;
+  background-color: #2f6ee2;
+}
+
+.color-bg-green {
+  background-color: #90cc20;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
 }
