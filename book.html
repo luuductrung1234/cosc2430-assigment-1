@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./book-style.css">
 	<title>Book Details</title>
 </head>
 
@@ -13,9 +14,9 @@
 	<header class="main-header">
 		<!-- Book Store Logo - Pinterest - https://www.pinterest.com/pin/609815605809668533/ -->
 		<img class="logo" src="./images/logo.jpeg" alt="logo" />
-		<nav class="nav main-nav" aria-labelledby="main-navigation">
+		<nav class="navbar main-nav" aria-labelledby="main-navigation">
 			<ul class="nav-items">
-				<li class="nav-item"><a href="#">Home</a></li>
+				<li class="nav-item"><a href="./index.html">Home</a></li>
 				<li class="nav-item">
 					<div class="category-drop">
 						<button class="drop-btn">Category</button>
@@ -30,6 +31,33 @@
 		</nav>
 	</header>
 	<main>
+		<aside>
+			<ul class="breadcrumb">
+				<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+				<li class="breadcrumb-item"><a href="./category.html">Category</a></li>
+				<li class="breadcrumb-item">Book name</li>
+			</ul>
+		</aside>
+		<article class="book">
+			<div class="book-body">
+				<figure class="book-imgs">
+					<img class="book-img main-img" src="" alt="book's main image">
+					<img class="book-img" src="" alt="book's small image 1">
+					<img class="book-img" src="" alt="book's small image 2">
+					<img class="book-img" src="" alt="book's small image 3">
+				</figure>
+				<div class="book-general">
+					<p class="book-price">$100</p>
+					<button class="add-cart">Add to Cart</button>
+				</div>
+				<div class="book-info">
+					<h3 class="book-title">Book name</h3>
+					<p class="book-desc">Book description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, nemo?
+						Hic alias vero voluptatum similique eaque, nihil quaerat neque eius. Maiores optio ducimus expedita culpa
+						ullam dolore molestias atque voluptatum!</p>
+				</div>
+			</div>
+		</article>
 	</main>
 	<footer class="main-footer">
 		<p class="copyright">Copyright &copy; 2022 by The Book Store.</p>

@@ -1,2 +1,3 @@
-# cosc2430-assigment-1
+# Online Bookstore
+
 RMIT - COSC2430 - Static Website (Early Feedback)

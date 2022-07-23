@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./contact-style.css">
 	<title>Contact Us</title>
 </head>
 
@@ -13,9 +14,9 @@
 	<header class="main-header">
 		<!-- Book Store Logo - Pinterest - https://www.pinterest.com/pin/609815605809668533/ -->
 		<img class="logo" src="./images/logo.jpeg" alt="logo" />
-		<nav class="nav main-nav" aria-labelledby="main-navigation">
+		<nav class="navbar main-nav" aria-labelledby="main-navigation">
 			<ul class="nav-items">
-				<li class="nav-item"><a href="#">Home</a></li>
+				<li class="nav-item"><a href="./index.html">Home</a></li>
 				<li class="nav-item">
 					<div class="category-drop">
 						<button class="drop-btn">Category</button>
@@ -30,6 +31,103 @@
 		</nav>
 	</header>
 	<main>
+		<header class="contact-header">
+			<h2 class="contact-title">Contact Us</h2>
+		</header>
+
+		<form class="contact-form" method="post" action="contact.html" enctype="multipart/form-data"
+			onsubmit="return false;">
+
+			<div class="form-row">
+				<div class="form-label">
+					<label for="purpose">Purpose of contact</label>
+				</div>
+				<div class="form-field">
+					<select required id="purpose" name="purpose">
+						<option value="sell">I want to sell books</option>
+						<option value="buy">I want to buy books</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-label">
+					<label for="name">Your name</label>
+				</div>
+				<div class="form-field">
+					<input required id="name" type="text" name="name" maxlength="50">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-label">
+					<label for="email">Your email</label>
+				</div>
+				<div class="form-field">
+					<input required id="email" type="email" name="email">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-label">
+					<label for="phone">Your phone</label>
+				</div>
+				<div class="form-field">
+					<input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-label">
+					<label>How can we contact you</label>
+				</div>
+				<div class="form-field">
+					<ol>
+						<li>
+							<input type="checkbox" id="contact_method_email" name="contact_methods[]" value="email">
+							<label for="contact_method_email">By email</label>
+						</li>
+						<li>
+							<input type="checkbox" id="contact_method_phone" name="contact_methods[]" value="phone">
+							<label for="contact_method_phone">By phone</label>
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-label">
+					<label>Do you want to receive our weekly newsletter</label>
+				</div>
+				<div class="form-field">
+					<ul>
+						<li>
+							<input type="radio" id="newsletter_yes" name="newsletter" value="yes" checked>
+							<label for="newsletter_yes">Yes</label>
+						</li>
+						<li>
+							<input type="radio" id="newsletter_no" name="newsletter" value="no">
+							<label for="newsletter_no">No</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-label">
+					<label for="note">Note</label>
+				</div>
+				<div class="form-field">
+					<textarea cols="40" rows="10" id="note" name="note"></textarea>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<input type="reset" value="Clear">
+				<input type="submit" value="Send">
+			</div>
+
+		</form>
 	</main>
 	<footer class="main-footer">
 		<p class="copyright">Copyright &copy; 2022 by The Book Store.</p>
