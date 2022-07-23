@@ -13,12 +13,12 @@
 <body>
 	<header class="main-header">
 		<!-- Book Store Logo - Pinterest - https://www.pinterest.com/pin/609815605809668533/ -->
-		<img class="logo" src="./images/logo.jpeg" alt="logo" />
+		<img class="logo" src="./images/logo-min.png" alt="logo" />
 		<nav class="navbar main-nav" aria-labelledby="main-navigation">
 			<ul class="nav-items">
 				<li class="nav-item active"><a href="#">Home</a></li>
 				<li class="nav-item">
-					<div class="category-drop">
+					<div class="drop">
 						<button class="drop-btn">Category</button>
 						<div class="drop-content">
 							<a class="drop-item" href="./category.html">Category 1</a>
@@ -29,7 +29,10 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main class="content">
+		<header class="content-header">
+			<h2 class="content-title">Welcome to Online Book Store</h2>
+		</header>
 		<article class="category">
 			<header class="category-header">
 				<h3 class="category-title">Category 1</h3>
@@ -46,14 +49,16 @@
 		<a class="more-category" href="">More Categories</a>
 	</main>
 	<footer class="main-footer">
-		<p class="copyright">Copyright &copy; 2022 by The Book Store.</p>
-		<nav class="nav footer-nav" aria-labelledby="second-navigation">
-			<ul>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Terms</a></li>
-				<li><a href="#">Copyright</a></li>
-				<li><a href="./contact.html">Contact Us</a></li>
+		<div class="footer-body">
+			<p class="copyright">Copyright &copy; 2022 by The Book Store.</p>
+		</div>
+		<nav class="navbar footer-nav" aria-labelledby="second-navigation">
+			<ul class="nav-items">
+				<li class="nav-item"><a href="#">About Us</a></li>
+				<li class="nav-item"><a href="#">Privacy Policy</a></li>
+				<li class="nav-item"><a href="#">Terms</a></li>
+				<li class="nav-item"><a href="#">Copyright</a></li>
+				<li class="nav-item"><a href="./contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
 	</footer>

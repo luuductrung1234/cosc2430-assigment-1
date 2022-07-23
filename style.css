@@ -6,5 +6,146 @@
 
 body {
   font-family: sans-serif;
+  padding: 5px 30px;
+}
+
+/* HEADER */
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  border-radius: 3px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  overflow: hidden;
+  align-self: flex-end;
+  border-radius: 3px;
+}
+
+.main-nav {
+  background-color: #1098ad;
+  width: 100vh;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item a:link,
+.nav-item a:visited {
+  color: #f7f7f7;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 35px;
+  text-decoration: none;
+}
+
+.drop {
+  float: left;
+  overflow: hidden;
+}
+
+.drop .drop-btn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #f7f7f7;
+  padding: 10px 35px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.nav-item a:hover,
+.nav-item a:active,
+.drop:hover .drop-btn {
+  color: #333;
+  font-weight: bold;
+  background-color: #f0bf1e;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drop .drop-item:link,
+.drop .drop-item:visited {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop .drop-item:hover,
+.drop .drop-item:active {
+  background-color: #ddd;
+}
+
+.drop:hover .drop-content {
+  display: block;
+}
+
+/* MAIN */
+
+.content {
+  margin-bottom: 20px;
+}
+
+.content-header {
+  background-color: #f7f7f7;
   padding: 20px;
+}
+
+.content-title {
+  color: #333;
+  text-align: center;
+}
+
+/* FOOTER */
+
+.main-footer {
+  background-color: #f7f7f7;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-body {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer-nav .nav-item a:link,
+.footer-nav .nav-item a:visited {
+  color: #333;
+}
+
+.footer-nav .nav-item a:hover,
+.footer-nav .nav-item a:active {
+  background-color: #ddd;
 }
