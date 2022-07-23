@@ -30,23 +30,35 @@
 		</nav>
 	</header>
 	<main class="content">
+
 		<header class="content-header">
 			<h2 class="content-title">Welcome to Online Book Store</h2>
 		</header>
-		<article class="category">
-			<header class="category-header">
-				<h3 class="category-title">Category 1</h3>
-			</header>
-			<article class="book">
-				<header class="book-header">
-					<h4 class="book-title">Book 1</h4>
+
+		<section class="categories">
+
+			<article class="category">
+				<header class="category-header">
+					<h3 class="category-title"><a href="./category.html">Category 1</a></h3>
 				</header>
-				<figure>
-					<img class="book-img" src="" alt="book1's image">
-				</figure>
+				<div class="books">
+					<article class="book">
+						<figure class="book-imgs">
+							<!-- HTML and CSS: Design and Build Websites 1st Edition
+								Amazon
+								https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/ -->
+							<img class="book-img" src="./images/html-css-book.jpg" alt="book1's image">
+						</figure>
+						<div class="book-info">
+							<h4 class="book-title"><a href="./book.html">Book 1</a></h4>
+							<p class="book-status color-bg-red">unavailable</p>
+						</div>
+					</article>
+				</div>
 			</article>
-		</article>
-		<a class="more-category" href="">More Categories</a>
+
+		</section>
+		<a class="more-category" href="./category.html">More Categories</a>
 	</main>
 	<footer class="main-footer">
 		<div class="footer-body">

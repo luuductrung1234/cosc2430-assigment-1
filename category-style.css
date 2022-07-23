@@ -1,1 +1,114 @@
-/* Category  */
+/* CATEGORY  */
+
+.categories {
+  padding: 20px;
+  display: flex;
+}
+
+.category {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.category-header {
+  border: 3px solid #333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.category-title {
+  text-align: center;
+}
+
+.category-title a:link,
+.category-title a:visited {
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+
+.category-title a:hover,
+.category-title a:active {
+  color: #1098ad;
+  text-align: center;
+}
+
+.more-category:link,
+.more-category:visited {
+  color: #111;
+  margin-bottom: 25px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.more-category:hover,
+.more-category:active {
+  background-color: #eee;
+  color: #1098ad;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* BOOK */
+
+.books {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.book {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.book-img {
+  width: 150px;
+}
+
+.book-info {
+  padding-top: 10px;
+}
+
+.book-title {
+  text-align: center;
+}
+
+.book-status {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 6px 10px;
+  position: absolute;
+  top: -10px;
+  left: -15px;
+}
+
+.book-title a:link,
+.book-title a:visited {
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+
+.book-title a:hover,
+.book-title a:active {
+  color: #1098ad;
+  text-align: center;
+}
+
+.color-bg-red {
+  color: #eee;
+  background-color: #ec2f2f;
+}
+
+.color-bg-green {
+  background-color: #90cc20;
+}
