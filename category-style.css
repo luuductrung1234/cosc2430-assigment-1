@@ -121,3 +121,37 @@
   top: -12px;
   left: -10px;
 }
+
+@media only screen and (max-width: 960px) {
+  /* MOBILE DEVICES */
+  .row {
+    display: block;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .category-title {
+    font-size: 20px;
+  }
+
+  .books {
+    display: flex;
+  }
+  .book {
+    padding: 20px;
+  }
+
+  .book-img {
+    width: 200px;
+  }
+
+  .book-title {
+    font-size: 18px;
+  }
+
+  .book-status {
+    font-size: 14px;
+  }
+}

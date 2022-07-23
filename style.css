@@ -176,3 +176,68 @@ button {
   clear: both;
   display: block;
 }
+
+@media only screen and (max-width: 960px) {
+  /* MOBILE DEVICES */
+
+  /* HEADER */
+
+  .main-header {
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .main-nav {
+    background-color: #f7f7f7;
+  }
+
+  .nav-items {
+    display: block;
+  }
+
+  .nav-item a:link,
+  .nav-item a:visited {
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+    border-bottom: 2px solid #1098ad;
+  }
+
+  .drop {
+    width: 100%;
+  }
+
+  .drop-content {
+    min-width: 91%;
+  }
+
+  .drop .drop-btn {
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+    border-bottom: 2px solid #1098ad;
+  }
+
+  .nav-item a:hover,
+  .nav-item a:active,
+  .drop:hover .drop-btn {
+    color: #eee;
+    font-weight: bold;
+    background-color: #1098ad;
+  }
+
+  /* FOOTER */
+
+  .main-footer {
+    display: block;
+  }
+  .footer-body {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

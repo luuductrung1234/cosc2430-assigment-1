@@ -145,6 +145,10 @@
   position: relative;
 }
 
+.book-header:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
 .book-title {
   font-size: 40px;
   margin-bottom: 10px;
@@ -170,7 +174,36 @@
   padding: 20px;
 }
 
+.book-detail:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
 .book-desc {
   line-height: 27px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+  /* MOBILE DEVICES */
+
+  .book-general-info {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .main-images {
+    text-align: center;
+  }
+
+  .sub-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+
+  .sub-img {
+    margin-left: 25px;
+  }
 }

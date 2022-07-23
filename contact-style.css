@@ -61,7 +61,7 @@ textarea {
   color: #333;
   background-color: #fff;
   padding: 8px 10px;
-  width: 100px;
+  width: 120px;
   margin-left: 20px;
 }
 
@@ -70,4 +70,19 @@ textarea {
   background-color: #1098ad;
   border: none;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 960px) {
+  /* MOBILE DEVICES */
+  .form-row {
+    display: block;
+  }
+
+  .form-label {
+    display: block;
+  }
+
+  .form-field {
+    width: 80%;
+  }
 }
